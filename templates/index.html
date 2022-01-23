@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcakes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha256-/ykJw/wDxMa0AQhHDYfuMEwVb4JHMx9h4jD4XvHqVzU=" crossorigin="anonymous" />
+</head>
+<body>
+
+    <div class = "container">
+        <div class = "row justify-content-center mb-2">
+            <h1>Camilla's Cupcakes</h1>
+        </div>
+        <div class = "row justify-content-center">
+            <form id="cupcake-form" method="POST">
+                <div class = "form-row my-2">
+                    <div class = "col">
+                        <input type="text" id = "flavor" class = "form-control" placeholder="Cupcake Flavor">
+                    </div>
+                    <div class = "col">
+                        <input type="text" id = "size" class = "form-control" placeholder="Size">
+                    </div>
+                    <div class = "col">
+                        <input type="text" id = "rating" class = "form-control" placeholder="Rating">
+                    </div>
+                </div>
+                <div class = "form-row my-2">
+                    <div class = "col">
+                        <input type="text" id = "image" class = "form-control" placeholder="Image URL">
+                    </div>
+                </div>
+                <div class = "row justify-content-center mb-2">
+                    <button class="add-cupcake btn btn-outline-success">Add Cupcake</button>
+                </div>
+            </form>
+        </div>
+        <div id = "cupcake-list" class = "row justify-content-start">
+        </div>
+    </div>
+    
+
+<script src="https://unpkg.com/jquery"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="/static/cupcakes.js"></script>
+</body>
+</html>
